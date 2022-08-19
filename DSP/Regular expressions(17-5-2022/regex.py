@@ -1,0 +1,15 @@
+import re
+txt="the rain in spain"
+x=re.findall("ai",txt)
+print(x)
+y=re.search("\s",txt)
+print(y)
+print(y.start())
+print(y.end())
+print(re.split('\s',txt,1))
+print(re.sub('\s','9',txt,2))
+print(re.findall("^the",txt))
+print(re.findall("spain$",txt))
+print(re.findall("t.e",txt))
+print(re.findall("\d",txt))
+print(re.findall("[a-m]",txt))

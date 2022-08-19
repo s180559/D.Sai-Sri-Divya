@@ -1,0 +1,15 @@
+import re
+text="welcome to python regular 12expressions"
+print(re.search("tho",text))
+print(re.search("[a-c]",text))
+print(re.findall("[a-d]",text))
+print(re.findall("[0-9]",text))
+print(re.findall("[a-z]",text))
+print(re.findall("pyt$",text))
+print(re.findall("p.*",text))
+print(re.search("p.*",text))
+print(re.findall("m+",text))
+print(re.search("m?",text))
+print(re.findall("m?",text))
+print(re.sub("welcome","WELCOME",text))
+print(re.search("^welcome.*12expressions$",text))
